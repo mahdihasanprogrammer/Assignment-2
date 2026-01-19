@@ -102,6 +102,7 @@
 #banner{
      background-image: url(./assets/hero-bg.png);
      background-position: center center;
+     background-repeat: no-repeat;
     text-align: center;
     margin: 100px auto;
 }
@@ -173,7 +174,8 @@
     margin-bottom: 1rem;
 }
 .about-content p{
-    max-width: 58%;
+    max-width: 700px;
+    width: 58%;
     margin:0 auto;
 }
 .about-hr{
@@ -228,13 +230,10 @@
 
 
     /* nav related */
-    .navbar{
-        padding: 1.25rem;
-    }
     .nav-items, .navbar button{
         display: none;
     }
-    .brand-name{
+    .brand-name,.banner-content h1{
         font-size: 2.5rem;
     }
     .hamburger-img{
@@ -246,7 +245,8 @@
         background-repeat: no-repeat;
         background-position: center 10%;
         background-size: 100% 250px;
-        margin: 40px 0;
+        margin-top: 40px;
+        margin-bottom: 0;
       
     }
   .banner-img-1{
@@ -277,13 +277,23 @@
         padding: 40px 0;
     }
     .about-content p{
-        max-width: 100%;
+        width: 100%;
     }
     .about-hr{
          margin: 40px 0;
     }
     .about-items{
         grid-template-columns: repeat(2,1fr);
+        gap:1.25rem;
+        align-items: center;
+        
    
 }
+    .item-title{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .item-star{
+        font-size: 1.75rem;
+    }
 }
