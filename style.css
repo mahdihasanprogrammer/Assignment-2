@@ -24,17 +24,28 @@
 .btn-primary{
     display: flex;
     align-items: center;
-    gap:6px;
+    gap:10px;
     font-size:18px;
-    padding: 1rem 0.9rem;
+     padding: 0.8rem 1.25rem;
     font-weight: 600;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     border: none;
     background: linear-gradient(to top right, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     color:#FFFFFF;
   
 }
-
+.btn-secondary{
+    display: flex;
+    gap:8px;
+    align-items: center;
+    font-size:18px;
+    padding: 0.8rem 1.25rem;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    border: 2px solid #00FF88;
+    background-color: #1a0b2e00;
+    color:#00FF88;
+}
 
 
 .navbar{
@@ -73,10 +84,78 @@
     border: 1px solid #f529b81f;
 }
 
+
+/* banner section */
+#banner{
+     background-image: url(./assets/hero-bg.png);
+     background-position: center center;
+    text-align: center;
+    margin: 100px auto;
+}
+.banner-img-box{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.banner-img-2{
+    position: absolute;
+    right: 45%;
+    top: 25%;
+}
+
+.banner-badge{
+    position: absolute;
+    right: 40%;
+    top:0;
+    background-color: #00FF88;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color:#1A0B2E;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.banner-content p{
+    margin-bottom: 1.5rem;
+    color:rgba(255, 255, 255, 0.7);
+}
+.banner-btn-group{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.banner-btn1 img{
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: 2px solid #FFFFFF;
+    outline-offset: 2px;
+    
+}
+.banner-btn2 img{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
 @media screen and (max-width:576px) {
+    /* shared style */
     .container{
         width: 95%;
     }
+    .btn-primary,.btn-secondary{
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+    }
+
 
     /* nav related */
     .navbar{
@@ -90,5 +169,35 @@
     }
     .hamburger-img{
         display: block;
+    }
+
+    /* banner section */
+    #banner{
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center 10%;
+        background-size: 100% 250px;
+      
+    }
+  .banner-img-1{
+    width: 60%;
+  }
+  .banner-img-2{
+    width: 20%;
+    right: 40%;
+  }
+    .banner-btn-group{
+        gap:8px;
+        flex-wrap: wrap;
+      
+    }
+    .banner-btn1 img,.banner-btn2 img{
+        width: 14px;
+        height: 14px;
+    }
+    
+
+    .banner-badge{
+        right: 18%;
     }
 }
