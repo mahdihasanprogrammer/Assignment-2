@@ -205,8 +205,46 @@
 }
 
 
+/* Why Choose Section */
+#why-choose{
+    background-color: #230E3D;
+    padding:120px 0;
+}
 
 
+#why-choose .section-title{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.why-choose-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.why-choose-card{
+    padding: 2.5rem;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 2.5rem;
+    
+}
+.why-choose-card-1{
+    grid-row: 2 span; 
+    align-content: center;
+    
+}
+.why-choose-card-2, .why-choose-card-3,.why-choose-card-4{
+    grid-column: 2 span;
+}
+
+.why-choose-card img{
+    margin-bottom: 1rem;
+}
+.why-choose-card h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -226,6 +264,10 @@
     }
     .section-title{
         font-size: 2rem;
+    }
+
+     #about,#why-choose{
+        padding: 40px 0;
     }
 
 
@@ -273,9 +315,7 @@
 
 
     /* about section */
-    #about{
-        padding: 40px 0;
-    }
+   
     .about-content p{
         width: 100%;
     }
@@ -296,4 +336,23 @@
     .item-star{
         font-size: 1.75rem;
     }
+
+    /* why choose section */
+    #why-choose .section-title{
+        margin-bottom: 1.25rem;
+    }
+    .why-choose-cards{
+        grid-template-columns:1fr;
+        gap: 20px;
+    }
+    .why-choose-card{
+        padding: 1.25rem;
+    }
+    .why-choose-card-1{
+        grid-row: 1 span;
+    }
+    .why-choose-card-2, .why-choose-card-3,.why-choose-card-4{
+        grid-column: 1 span;
+    }
+   
 }
