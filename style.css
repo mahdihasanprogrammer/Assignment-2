@@ -270,7 +270,7 @@
 .episode-video iframe{
    max-width: 560px;
     width: 100%;
-    height: 315px;
+    height: 250px;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
@@ -298,7 +298,38 @@
 
 
 /* Host section */
-
+#host{
+    margin-bottom: 120px;
+}
+.host-title{
+    margin-bottom: 2.5rem;
+}
+.host-content{
+   background-color:rgba(53, 17, 101, 0.4);
+   padding: 2.5rem;
+   display: flex;
+   gap:1.5rem;
+   align-items: center;
+   border-radius: 2.5rem;
+}
+.host-text-box{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.host-link{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.host-link img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+   outline: 1px solid #533C72;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
 
 @media screen and (max-width:576px) {
     /* shared style */
@@ -316,8 +347,14 @@
     .navbar,#banner{
         padding: 0 20px;
     }
-     #about,#why-choose,#featured{
+     #about,#why-choose,
+     #featured{
         padding: 40px 20px;
+    }
+    #why-choose .section-title,
+    .featured-title,
+    .host-title{
+        margin-bottom: 1.25rem;
     }
 
 
@@ -387,9 +424,7 @@
     }
 
     /* why choose section */
-    #why-choose .section-title,.featured-title{
-        margin-bottom: 1.25rem;
-    }
+    
     .why-choose-cards,.featured-episodes{
         grid-template-columns:1fr;
         gap: 20px;
@@ -415,5 +450,25 @@
         border-top-left-radius: 1.5rem;
         height: 100%;
     }
+
+    /* host section */
+    #host{
+        margin-bottom: 40px;
+    }
+    .host-content{
+        flex-direction: column;
+        text-align: center;
+        padding:20px;
+        border-radius: 1.5rem;
+    }
+    .host-link{
+        margin:  0 auto;
+    }
    
+}
+
+@media screen and (min-width:992px) and (max-width:1280px){
+    .episode-video iframe{
+        height: 100%;
+    }
 }
