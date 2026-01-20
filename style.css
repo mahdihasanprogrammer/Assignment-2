@@ -66,7 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.85rem 0;
+    padding:  1.85rem 0;
 }
 
 
@@ -331,6 +331,35 @@
     box-sizing: content-box;
 }
 
+
+/* footer section */
+footer{
+    padding: 120px 0;
+     background-color:rgba(53, 17, 101, 0.4);
+     background: url('./assets/footer-bg.png');
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    
+}
+.footer-link div{
+    display: flex;
+    gap:0.5rem;
+    font-weight: 500;
+    
+}
+.footer-link div p{
+    color:rgba(255, 255, 255, 0.7);
+}
 @media screen and (max-width:576px) {
     /* shared style */
    
@@ -344,11 +373,13 @@
     .section-title{
         font-size: 2rem;
     }
-    .navbar,#banner{
-        padding: 0 20px;
+    #banner{
+        padding:0 20px;
     }
-     #about,#why-choose,
-     #featured{
+     #about,
+     #why-choose,
+     #featured,
+     footer{
         padding: 40px 20px;
     }
     #why-choose .section-title,
@@ -359,6 +390,9 @@
 
 
     /* nav related */
+    .navbar{
+        padding: 20px;
+    }
     .nav-items, .navbar button{
         display: none;
     }
@@ -448,7 +482,8 @@
     .episode-video iframe{
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
-        height: 100%;
+       height: 200px;
+       
     }
 
     /* host section */
@@ -458,11 +493,23 @@
     .host-content{
         flex-direction: column;
         text-align: center;
+        margin: 1.25rem;
         padding:20px;
         border-radius: 1.5rem;
     }
     .host-link{
         margin:  0 auto;
+    }
+
+    /* footer */
+    footer{
+       background-repeat: no-repeat;
+        background-position:center 50%;
+        background-size:100% 100%;
+    }
+    .footer-link{
+        flex-wrap: wrap;
+        gap:2rem;
     }
    
 }
