@@ -354,7 +354,7 @@
 
 /* footer section */
 footer{
-   
+    padding: 120px 0;
     background-color:rgb(28, 18, 69);
      background-image: url('./assets/footer-bg.png');
      background-position: center center;
@@ -362,7 +362,6 @@ footer{
     
 }
 .footer-container{
-    padding: 120px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
