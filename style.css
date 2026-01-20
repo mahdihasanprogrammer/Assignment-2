@@ -9,14 +9,31 @@
     box-sizing: border-box;
 }
 
+@keyframes scale-mic {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes rotate-circle {
+    from{
+        transform:  rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* shared style */
 .container{
     width:75%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
-/* shared style */
 .theme-color{
     background-color: #1A0B2E;
     color:white;
@@ -111,11 +128,14 @@
     position: relative;
     margin-bottom: 40px;
 }
-
+.banner-img-1{
+    animation: rotate-circle 2s ease-out infinite alternate;
+}
 .banner-img-2{
     position: absolute;
     right: 45%;
     top: 25%;
+    animation: scale-mic 2s ease-in infinite alternate;
 }
 
 .banner-badge{
@@ -335,16 +355,16 @@
 /* footer section */
 footer{
     padding: 120px 0;
-    
+    background-color:rgb(28, 18, 69);
      background: url('./assets/footer-bg.png');
      background-position: center center;
 }
 .footer-container{
-     /* background-color:rgb(28, 18, 69); */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap:2rem;
+    
 }
 
 .footer-link{
@@ -361,6 +381,7 @@ footer{
 }
 .footer-link div p{
     color:rgba(255, 255, 255, 0.7);
+
 }
 @media screen and (max-width:576px) {
     /* shared style */
@@ -513,10 +534,16 @@ footer{
         flex-wrap: wrap;
         gap:2rem;
     }
+    .footer-container .section-sub-title{
+        font-size: 0.8rem;
+    }
    
 }
 
 @media screen and (min-width:992px) and (max-width:1280px){
+
+    /* banner section */
+   
     .episode-video iframe{
         height: 100%;
     }
