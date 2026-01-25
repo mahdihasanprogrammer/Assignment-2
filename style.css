@@ -1,7 +1,5 @@
 /* added inter font */
-.hide{
-    display: none;
-}
+
 .font-inter {
   font-family: "Inter", sans-serif;
 }
@@ -14,30 +12,35 @@
 
 @keyframes rotate-circle {
     from{
-        transform:  rotate(0deg);
+        transform:  rotate(0deg) ;
     }
     to{
         transform: rotate(360deg);
     }
 }
 
-@keyframes brand-name {
+
+@keyframes wave{
     from{
        background: linear-gradient(rgba(145, 0, 248, 1),rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
-    color:transparent;
-    background-clip: text;
+        color:transparent;
+        background-clip: text;
+
     }
     to{
+
         background: linear-gradient(rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
-    color:transparent;
-    background-clip: text;
+        color:transparent;
+        background-clip: text;
+        
     }
 }
 
 
+
 /* shared style */
 .container{
-    width:75%;
+    width:90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -98,9 +101,10 @@
 .brand-name{
     font-size: 3.75rem;
     font-weight: 800;
+  
 }
 .brand-name > span{
-    animation: brand-name 0.5s ease-in-out infinite ;
+    animation: wave 0.5s ease-in-out infinite ;
 }
 
 .nav-items{
